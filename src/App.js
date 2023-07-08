@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 function App() {
     return (
-        <div className='App'>
-            <h1>Testing</h1>
+        <div>
+            <Navbar />
+            <Hero />
         </div>
     );
 }
