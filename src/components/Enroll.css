@@ -1,0 +1,26 @@
+.enroll .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.enroll .left {
+    text-align: center;
+}
+
+.enroll img {
+    width: 175px;
+}
+
+.enroll img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 940px) {
+    .enroll .container {
+        grid-template-columns: 1fr;
+    }
+}

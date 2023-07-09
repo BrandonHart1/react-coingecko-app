@@ -52,14 +52,129 @@ const Featured = () => {
                         {/* ----- Display percentage change with up or down arrow ----- */}
                         {data[0].price_change_percentage_24h < 0 ? (
                             <span className='red'>
-                                <FiArrowDown />
+                                <FiArrowDown className='icon' />
                                 {data[0].price_change_percentage_24h.toFixed(2)}
                                 %
                             </span>
                         ) : (
                             <span className='green'>
-                                <FiArrowUpRight />
+                                <FiArrowUpRight className='icon' />
                                 {data[0].price_change_percentage_24h.toFixed(2)}
+                            </span>
+                        )}
+                    </div>
+                    <div className='card'>
+                        <div className='top'>
+                            <img src={data[1].image} alt='data' />
+                        </div>
+                        <div>
+                            <h5>{data[1].name}</h5>
+                            <p>${data[1].current_price.toLocaleString()}</p>
+                        </div>
+
+                        {/* ----- Display percentage change with up or down arrow ----- */}
+                        {data[1].price_change_percentage_24h < 0 ? (
+                            <span className='red'>
+                                <FiArrowDown className='icon' />
+                                {data[1].price_change_percentage_24h.toFixed(2)}
+                                %
+                            </span>
+                        ) : (
+                            <span className='green'>
+                                <FiArrowUpRight className='icon' />
+                                {data[1].price_change_percentage_24h.toFixed(2)}
+                            </span>
+                        )}
+                    </div>
+                    <div className='card'>
+                        <div className='top'>
+                            <img src={data[2].image} alt='data' />
+                        </div>
+                        <div>
+                            <h5>{data[2].name}</h5>
+                            <p>${data[2].current_price.toLocaleString()}</p>
+                        </div>
+
+                        {/* ----- Display percentage change with up or down arrow ----- */}
+                        {data[2].price_change_percentage_24h < 0 ? (
+                            <span className='red'>
+                                <FiArrowDown className='icon' />
+                                {data[2].price_change_percentage_24h.toFixed(2)}
+                                %
+                            </span>
+                        ) : (
+                            <span className='green'>
+                                <FiArrowUpRight className='icon' />
+                                {data[2].price_change_percentage_24h.toFixed(2)}
+                            </span>
+                        )}
+                    </div>
+                    <div className='card'>
+                        <div className='top'>
+                            <img src={data[3].image} alt='data' />
+                        </div>
+                        <div>
+                            <h5>{data[3].name}</h5>
+                            <p>${data[3].current_price.toLocaleString()}</p>
+                        </div>
+
+                        {/* ----- Display percentage change with up or down arrow ----- */}
+                        {data[3].price_change_percentage_24h < 0 ? (
+                            <span className='red'>
+                                <FiArrowDown className='icon' />
+                                {data[3].price_change_percentage_24h.toFixed(2)}
+                                %
+                            </span>
+                        ) : (
+                            <span className='green'>
+                                <FiArrowUpRight className='icon' />
+                                {data[3].price_change_percentage_24h.toFixed(2)}
+                            </span>
+                        )}
+                    </div>
+                    <div className='card'>
+                        <div className='top'>
+                            <img src={data[4].image} alt='data' />
+                        </div>
+                        <div>
+                            <h5>{data[4].name}</h5>
+                            <p>${data[4].current_price.toLocaleString()}</p>
+                        </div>
+
+                        {/* ----- Display percentage change with up or down arrow ----- */}
+                        {data[4].price_change_percentage_24h < 0 ? (
+                            <span className='red'>
+                                <FiArrowDown className='icon' />
+                                {data[4].price_change_percentage_24h.toFixed(2)}
+                                %
+                            </span>
+                        ) : (
+                            <span className='green'>
+                                <FiArrowUpRight className='icon' />
+                                {data[4].price_change_percentage_24h.toFixed(2)}
+                            </span>
+                        )}
+                    </div>
+                    <div className='card'>
+                        <div className='top'>
+                            <img src={data[5].image} alt='data' />
+                        </div>
+                        <div>
+                            <h5>{data[5].name}</h5>
+                            <p>${data[5].current_price.toLocaleString()}</p>
+                        </div>
+
+                        {/* ----- Display percentage change with up or down arrow ----- */}
+                        {data[5].price_change_percentage_24h < 0 ? (
+                            <span className='red'>
+                                <FiArrowDown className='icon' />
+                                {data[5].price_change_percentage_24h.toFixed(2)}
+                                %
+                            </span>
+                        ) : (
+                            <span className='green'>
+                                <FiArrowUpRight className='icon' />
+                                {data[5].price_change_percentage_24h.toFixed(2)}
                             </span>
                         )}
                     </div>
